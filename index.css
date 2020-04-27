@@ -1,0 +1,78 @@
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {height: 800px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+  padding-top: 50px;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;} 
+}
+
+h3{
+  padding-bottom: 15px;
+}
+
+h4{
+  padding-left: 30px;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-left: 10px;
+  height: 80px;
+  width: 100%;
+}
+
+svg {
+  display: block;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#us-map-2012, #us-map-2008, #us-map-2004 {
+  display: none;
+}
+
+path:hover, circle:hover {
+  stroke: #000000 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  cursor: pointer;
+}
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #BF0A30;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}
