@@ -1,2 +1,2 @@
 # PresidentialDataInformationSystem
-thilankawillbe@gmail.com
+http://homepages.rpi.edu/~hux8/XInfo/
