@@ -77,26 +77,40 @@ path:hover, circle:hover {
   font-family: arial;
 }
 
-/* Style for legends */
-.legend {
+/* Style for candidate info */
+.fa-republican {
+  color: white;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.fa-democrat {
+  color: white;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+#candidate {
   list-style: none;
   padding-bottom: 20px;
-  padding-left: 0px;
+  padding-left: 12px;
 }
-.legend li {
-  float: left;
+#candidate li {
   margin-right: 10px;
+  margin-bottom: 20px;
 }
-.legend span {
+#candidate span {
   border: 1px solid #ccc;
   float: left;
-  width: 12px;
-  height: 12px;
+  width: 30px;
+  height: 30px;
   margin: 2px;
 }
-.legend .republican {
+#candidate .republican {
   background-color: #d22532;
 }
-.legend .democratic {
+#candidate .democratic {
   background-color: #244999;
+}
+#candidate h5 {
+  margin-top: 0px;
 }

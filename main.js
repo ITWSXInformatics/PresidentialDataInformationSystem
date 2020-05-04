@@ -23,7 +23,7 @@ if (ios) {
 
 // When a menu item is clicked, it is set to the active tab
 // and the corresponding SVG is shown
-$("li").click(function(event) {
+$("#graph-map li").click(function(event) {
     $("li").removeClass("active");
     $(this).addClass("active");
 
@@ -32,16 +32,24 @@ $("li").click(function(event) {
     var tab = $(this).attr("id");
     if (tab === "2016") {
         $('#us-map-2016').show();
-        $('#description').html("--- descriptions for 2016 ---");
+        $('#description').html("--- Description for 2016 ---");
+        $('#candidate #republican-name h5').html("Donald J. Trump&nbsp;&#10004;");
+        $('#candidate #democratic-name h5').html("Hillary R. Clinton");
     } else if (tab === "2012") {
         $('#us-map-2012').show();
-        $('#description').html("--- descriptions for 2012 ---");
+        $('#description').html("--- Description for 2012 ---");
+        $('#candidate #republican-name h5').html("W. Mitt Romney");
+        $('#candidate #democratic-name h5').html("Barack H. Obama&nbsp;&#10004;");
     } else if (tab === "2008") {
         $('#us-map-2008').show();
-        $('#description').html("--- descriptions for 2008 ---");
+        $('#description').html("--- Description for 2008 ---");
+        $('#candidate #republican-name h5').html("John S. McCain");
+        $('#candidate #democratic-name h5').html("Barack H. Obama&nbsp;&#10004;");
     } else if (tab === "2004") {
         $('#us-map-2004').show();
-        $('#description').html("--- descriptions for 2004 ---");
+        $('#description').html("--- Description for 2004 ---");
+        $('#candidate #republican-name h5').html("George W. Bush&nbsp;&#10004;");
+        $('#candidate #democratic-name h5').html("John F. Kerry");
     }
 
 });
